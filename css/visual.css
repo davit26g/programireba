@@ -10,6 +10,11 @@
     --transition: transform .75s cubic-bezier(.075, 0.5, 0, 1);
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 @font-face {
     font-family: raleway_f;
     src: url(../fonts/raleway-regular.woff2);
@@ -298,33 +303,121 @@ body{
 }
 
 .left-block{
-    background-color:green;
+    background-color: #40345d63;
     width:339px;
-    height:75vh;
-    z-index:101;
-    display:flex;
+    height:51vh;
+    /* z-index:101; */
+    
     position:fixed;
     top:66px;
 
 }
 
 .ul-in-block{
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     left: 70px;
-    top:30px;
+    
     list-style: none;
     color: hsl(0, 0%, 0%);
     line-height: 43px;
 }
 
-#first-icon{
+.ul-in-block li{
+    background-color: gray;
+    
+    text-align: start;
+}
+
+.ul-in-block img{
+    width:28px;
+    height:28px;
+
+}
+
+/* #first-icon{
     width:30px;
     height:30px;
-    transform: translate(-15px, 8px);
+    transform: translate(-10px, 8px);
 }
 
 .first-li{
-    transform: translateX(-46px);
+    transform: translateX(-69px);
+    cursor: pointer;
+    background-color: gray;
+}
 
+#second-icon{
+    width:26px;
+    height:26px;
+    transform: translate(-10px, 8px);
+}
+
+.second-li{
+    cursor:pointer;
+    transform: translateX(-69px);
+}
+
+#third-icon{
+    width:26px;
+    height:26px;
+    transform: translate(-10px, 8px);
+}
+
+.third-li{
+    cursor:pointer;
+    transform: translateX(-69px);
+}
+
+#four-icon{
+    width:26px;
+    height:26px;
+    transform: translate(-10px, 8px);
+}
+
+.four-li{
+    cursor:pointer;
+    transform: translateX(-69px);
+}
+
+#five-icon{
+    width:26px;
+    height:26px;
+    transform: translate(-10px, 8px);
+}
+
+.five-li{
+    cursor:pointer;
+    transform: translateX(-69px);
+}
+
+#six-icon{
+    width:26px;
+    height:26px;
+    transform: translate(-10px, 8px);
+}
+
+.six-li{
+    cursor:pointer;
+    transform: translateX(-69px);
+}
+
+#seven-icon{
+    width:26px;
+    height:26px;
+    transform: translate(-10px, 8px);
+}
+
+.seven-li{
+    cursor:pointer;
+    transform: translateX(-69px);
+} */
+
+.left-down-block{
+    background-color:blue;
+    width:339px;
+    position:fixed;
+    display:flex;
+    top:61vh;
+    visibility: hidden;
 }
