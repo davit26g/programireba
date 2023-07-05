@@ -12,7 +12,6 @@
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 @font-face {
@@ -162,14 +161,42 @@ body{
     z-index:101;
     position: fixed;
     display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-in-left{
+    width:300px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle{
+    width:425px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.right{
+    width:242px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 .logo{
     width:50px;
     height:50px;
-    position: absolute;
-    left:35px;
-    top:6px;
     cursor: pointer;
 }
 
@@ -178,9 +205,6 @@ body{
 }
 
 .header-in-left input{
-    position:absolute;
-    left:95px;
-    top:17px;
     height:31px;
     width:208px;
     border-radius: 20px;
@@ -200,19 +224,10 @@ body{
     transform: translateX(10px);
 }
 
-.middle{
-    width:375px;
-    height:100%;
-    position:absolute;
-    left:35vw;
 
-}
 .home{
     width:28px;
     height:28px;
-    position:absolute;
-    top:20px;
-    left:85px;
     cursor: pointer;
 }
 
@@ -223,9 +238,6 @@ body{
 .friends{
     width:28px;
     height:28px;
-    position:absolute;
-    top:20px;
-    left:180px;
     cursor: pointer;
 }
 
@@ -236,9 +248,6 @@ body{
 .groups{
     width:28px;
     height:28px;
-    position:absolute;
-    top:20px;
-    left:275px;
     cursor: pointer;
 }
 
@@ -247,11 +256,8 @@ body{
 }
 
 .games{
-    width:28px;
-    height:28px;
-    position:absolute;
-    top:20px;
-    left:370px;
+    width:30px;
+    height:30px;
     cursor: pointer;
 }
 
@@ -259,165 +265,77 @@ body{
     transform: scale3d(1.1, 1.1, 1.1);
 }
 
-.right{
-    width:375px;
-    height:100%;
-    position:absolute;
-    right:0;
-}
+
 
 .menu{
     width:37px;
     height:37px;
-    position:absolute;
-    top:17px;
-    right:27vh;
     cursor: pointer;
 }
 
 .messenger{
     width:37px;
     height:37px;
-    position:absolute;
-    top:17px;
-    right:19vh;
     cursor: pointer;
 }
 
 .notifications{
     width:40px;
     height:40px;
-    position:absolute;
-    top:15px;
-    right:11vh;
     cursor: pointer;
 }
 
 .account{
     width:40px;
     height:40px;
-    position:absolute;
-    top:15px;
-    right:4vh;
     cursor: pointer;
+}
+
+
+.down-content{
+    width:100ww;
+    height:100wh;
+    
+    
+
+
 }
 
 .left-block{
     background-color: #40345d63;
-    width:339px;
+    width:30%;
     height:51vh;
-    /* z-index:101; */
-    
     position:fixed;
     top:66px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-.ul-in-block{
-    font-size: 15px;
-    position: absolute;
-    left: 70px;
-    
-    list-style: none;
-    color: hsl(0, 0%, 0%);
-    line-height: 43px;
-}
-
-.ul-in-block li{
-    background-color: gray;
-    
-    text-align: start;
-}
-
-.ul-in-block img{
-    width:28px;
-    height:28px;
-
-}
-
-/* #first-icon{
-    width:30px;
-    height:30px;
-    transform: translate(-10px, 8px);
-}
-
-.first-li{
-    transform: translateX(-69px);
-    cursor: pointer;
-    background-color: gray;
-}
-
-#second-icon{
-    width:26px;
-    height:26px;
-    transform: translate(-10px, 8px);
-}
-
-.second-li{
-    cursor:pointer;
-    transform: translateX(-69px);
-}
-
-#third-icon{
-    width:26px;
-    height:26px;
-    transform: translate(-10px, 8px);
-}
-
-.third-li{
-    cursor:pointer;
-    transform: translateX(-69px);
-}
-
-#four-icon{
-    width:26px;
-    height:26px;
-    transform: translate(-10px, 8px);
-}
-
-.four-li{
-    cursor:pointer;
-    transform: translateX(-69px);
-}
-
-#five-icon{
-    width:26px;
-    height:26px;
-    transform: translate(-10px, 8px);
-}
-
-.five-li{
-    cursor:pointer;
-    transform: translateX(-69px);
-}
-
-#six-icon{
-    width:26px;
-    height:26px;
-    transform: translate(-10px, 8px);
-}
-
-.six-li{
-    cursor:pointer;
-    transform: translateX(-69px);
-}
-
-#seven-icon{
-    width:26px;
-    height:26px;
-    transform: translate(-10px, 8px);
-}
-
-.seven-li{
-    cursor:pointer;
-    transform: translateX(-69px);
-} */
 
 .left-down-block{
     background-color:blue;
-    width:339px;
-    position:fixed;
+    width:30%;
     display:flex;
+    position: fixed;
     top:61vh;
     visibility: hidden;
+}
+
+.middle-block{
+    background-color:red;
+    width:40%;
+    height:100%;
+    
+    
+}
+
+.right-block{
+    width:30%;
+    height:100%;
+    background-color:green;
+}
+
+.left-block img{
+    width:28px;
+    height:28px;
 }
