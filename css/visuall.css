@@ -1,0 +1,246 @@
+html, body{
+    height:100%
+}
+
+body{
+    margin:0;
+
+    background: linear-gradient(45deg, #200122, #6f0000);
+    background-size: 300% 300%;
+    animation-name: gradient;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color:#20325a61;
+    box-shadow: inset 6px 7px 20px 2px #61dfd98c;
+    width:100vw;
+    height:10vh;
+    z-index:101;
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-in-left{
+    width:300px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle{
+    width:425px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.right{
+    width:242px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.header-in-left input{
+    height:31px;
+    width:208px;
+    border-radius: 20px;
+    outline:none;
+    font-size: 20px;
+    border:none;
+}
+
+.header-in-left input:hover{
+    box-shadow: inset 0px 0px 18px 7px #25e772d9;
+}
+
+.header-in-left input::placeholder{
+    color:rgb(37, 21, 21);
+    font-size: medium;
+    letter-spacing: 3px;
+    transform: translateX(10px);
+}
+
+
+.home{
+    width:28px;
+    height:28px;
+    cursor: pointer;
+}
+
+.home:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.friends{
+    width:28px;
+    height:28px;
+    cursor: pointer;
+}
+
+.friends:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.groups{
+    width:28px;
+    height:28px;
+    cursor: pointer;
+}
+
+.groups:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.games{
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.games:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+
+
+.menu{
+    width:37px;
+    height:37px;
+    cursor: pointer;
+}
+
+.messenger{
+    width:37px;
+    height:37px;
+    cursor: pointer;
+}
+
+.notifications{
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.account{
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+
+.down-content{
+    width:100ww;
+    height:100wh;
+    
+    
+
+
+}
+
+.left-block{
+    background-color: #74717e63;
+    width:30%;
+    height:53.5vh;
+    position:fixed;
+    top:63px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.left-down-block{
+    background-color:blue;
+    width:30%;
+    display:flex;
+    position: fixed;
+    top:61vh;
+    visibility: hidden;
+}
+
+.middle-block{
+    background-color:red;
+    width:40%;
+    height:100%;
+    
+    
+}
+
+.right-block{
+    width:30%;
+    height:100%;
+    background-color:green;
+}
+
+.left-block img{
+    width:28px;
+    height:28px;
+}
+
+.left-block a{
+    color:rgb(184, 182, 182);
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px 9px 5px;
+}
+
+.seven-li img{
+    margin:10px 10px 0 5px
+}
+
+.seven-li{
+    display:flex;
+    align-items: flex-end;
+    cursor: pointer;
+    padding-bottom: 12px;
+    color:rgb(184, 182, 182);
+}
+
+.left-block div:hover{
+    background-color:rgb(100, 77, 77);
+    border-radius: 8px;
+}
+
+.left-block div:hover{
+    margin-left: 20px;
+    transform: scale3d(1.1, 1.1, 1.1);
+    width: 90.5%;
+}

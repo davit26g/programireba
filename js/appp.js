@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',function(){
     let downblock = document.querySelector('.left-down-block');
 
     reload.addEventListener('click',()=>{
-        window.location.href='file:///C:/Users/Davit/Desktop/chtoto/programireba/index.html'
+        window.location.href='file:///C:/Users/Davit/Desktop/newgit/programireba2/indexx.html'
     });
 
     showmore.addEventListener('click',()=>{
