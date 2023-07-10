@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded',function(){
     let reload = document.querySelector('.logo');
     let showmore = document.querySelector('.seven-li');
     let downblock = document.querySelector('.left-down-block');
-    let scrol = document.querySelector('.left-menu'); 
+    let middleblock = document.querySelector('.left-middle-block');
+    let menu = document.querySelector('.menu');
 
     
 
@@ -13,11 +14,14 @@ document.addEventListener('DOMContentLoaded',function(){
     showmore.addEventListener('click',()=>{
         
             if(downblock.style.visibility === ''){
-                downblock.style.visibility = 'visible'
+                middleblock.style.visibility = 'hidden';
+                downblock.style.visibility = 'visible';
             }else if(downblock.style.visibility === 'visible'){
+                middleblock.style.visibility = 'visible';
                 downblock.style.visibility = ''
             }
-        
+    })
+    menu.addEventListener('click',()=>{
         
     })
 })
