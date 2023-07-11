@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded',function(){
     let downblock = document.querySelector('.left-down-block');
     let middleblock = document.querySelector('.left-middle-block');
     let menu = document.querySelector('.menu');
+    let showmenu = document.querySelector('.right-menu');
 
     
 
@@ -22,6 +23,10 @@ document.addEventListener('DOMContentLoaded',function(){
             }
     })
     menu.addEventListener('click',()=>{
-        
+        if(showmenu.style.visibility === ''){
+            showmenu.style.visibility = 'visible';
+        }else if(showmenu.style.visibility === 'visible'){
+            showmenu.style.visibility = '';
+        }
     })
 })

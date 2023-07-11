@@ -365,3 +365,75 @@ a{
     height:100%;
     text-align: center;
 }
+
+.right-menu{
+    width:700px;
+    height:540px;
+    background-color:red;
+    position: fixed;
+    top:70px;
+    right:20px;
+    z-index: 101;
+    /* display: flex; */
+    justify-content: center;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.left-in-right-menu{
+    width:55%;
+    height:470px;
+    background-color:green;
+    position: absolute;
+    top:60px;
+    left:10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-in-right-menu{
+    width:40%;
+    height:470px;
+    background-color:blue;
+    position: absolute;
+    top:60px;
+    right:10px;
+    overflow-y: auto;
+}
+
+.inp{
+    position: absolute;
+    width:307px;
+    height:40px;
+    top:0px;
+    left:0;
+    border-radius:20px;
+    outline: none;
+    border: none;
+}
+
+.obshenie{
+    margin-top:55px;
+    margin-left: 10px;
+}
+
+.txt-obshenie{
+    position: absolute;
+    top:25px;
+    left:40px;
+}
+
+.left-in-right-menu a{
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.left-in-right-menu img{
+    width:30px;
+    height:30px;
+    position: absolute;
+    left: 5px;
+    
+}
