@@ -736,37 +736,94 @@ a{
 
 .profile-menu{
     width:350px;
-    height:500px;
-    background-color:red;
+    height:550px;
+    background-color: rgb(125 112 112 / 99%);
     position: fixed;
     top:60px;
     right:40px;
     border-radius: 10px;
     z-index:101;
-    /* visibility: hidden; */
+    visibility: hidden;
     display:flex;
     justify-content: center;
+    box-shadow: 10px 10px 10px;
 }
 
 .profile-menu-up{
     width:280px;
     height:112px;
-    background-color:blue;
     position: fixed;
     margin-top:15px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
 
 }
 
 .profile-menu-up1{
     height:60px;
     width:280px;
-    background-color:green;
+    background-color:white;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    cursor: pointer;
+    box-shadow: 0px -1px 10px 5px #101010;;
+}
+
+.profile-menu-up1:hover{
+    background-color: #a7a4a4;
 }
 
 .profile-menu-up2{
     width:280px;
     height:51px;
-    background-color:gray;
+    background-color:white;
     margin-top:1px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    cursor: pointer;
+    box-shadow: 0px 7px 10px 5px #101010;
 }
+
+.profile-menu-up2:hover{
+    background-color: #a7a4a4;
+}
+
+.profile-menu-down{
+    width:300px;
+    height:390px;
+    position: fixed;
+    margin-top:150px;
+    border-radius: 10px;
+}
+
+.profile-menu-down a{
+    display:flex;
+    margin-top:-5px;
+    color:black;
+}
+
+.profile-menu-down img{
+    width:25px;
+    height:25px;
+    margin-right:20px;
+    margin-top:13px;
+    
+}
+
+.profile-menu-down div{
+    margin-top:6px;
+    padding:0 0 0 10px;
+    border-radius:10px;
+}
+
+.profile-menu-down div:hover{
+    background-color:gray;
+}
+
+.account-name{
+    cursor: pointer;
+    margin-left:10px;
+}
+
 
