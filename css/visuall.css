@@ -170,19 +170,15 @@ a{
 .down-content{
     width:100%;
     height:100%;
-    
-    
-
-
 }
 
 .left-block{
-    background-color: #2e2a3d96;
+    /* background-color: #2e2a3d96; */
     width:30%;
     height:53.5vh;
     position:fixed;
     top:63px;
-    box-shadow: inset -7px 0px 20px 0px #d3bcbc;
+    /* box-shadow: inset -7px 0px 20px 0px #d3bcbc; */
 }
 
 .left-block img{
@@ -191,20 +187,21 @@ a{
 }
 
 .left-block a{
-    color:rgb(184, 182, 182);
+    /* color:rgb(184, 182, 182); */
+    color:black;
     display: flex;
     gap: 10px;
     padding: 10px 0px 9px 5px;
 }
 
 .left-middle-block{
-    background-color: #2e2a3d96;
+    /* background-color: #2e2a3d96; */
     width:30%;
     height:36.5vh;
     position:fixed;
     top:63.6%;
     overflow-y: auto;
-    box-shadow: inset -7px 0px 20px 0px #d3bcbc;
+    /* box-shadow: inset -7px 0px 20px 0px #d3bcbc; */
 }
 
 .left-middle-block a{
@@ -212,7 +209,8 @@ a{
     gap: 40px;
     margin-bottom:10px;
     font-size: 25px;
-    color:rgb(184, 182, 182);
+    /* color:rgb(184, 182, 182); */
+    color:black;
 }
 
 .left-middle-block a:hover{
@@ -237,7 +235,7 @@ a{
 }
 
 .left-down-block{
-    background-color: #2e2a3d96;
+    /* background-color: #2e2a3d96; */
     width:30%;
     height: 36%;
     display:flex;
@@ -245,13 +243,13 @@ a{
     top:63.5vh;
     visibility: hidden;
     flex-direction: column;
-    color:rgb(184, 182, 182);
     overflow-y: auto;
-    box-shadow: inset -7px 0px 20px 0px #d3bcbc;
+    /* box-shadow: inset -7px 0px 20px 0px #d3bcbc; */
 }
 
 .left-down-block a{
-    color:rgb(184, 182, 182);
+    /* color:rgb(184, 182, 182); */
+    color:black;
     display: flex;
     gap: 10px;
     padding: 10px 0px 9px 5px;
@@ -311,7 +309,8 @@ a{
     align-items: flex-end;
     cursor: pointer;
     padding-bottom: 12px;
-    color:rgb(184, 182, 182);
+    /* color:rgb(184, 182, 182); */
+    color:black;
 }
 
 
@@ -330,44 +329,18 @@ a{
 }
 
 .reklama{
-    background-color: #74717e63;
     width:100%;
     height:30%;
     text-align: center;
     margin-bottom: 1px;
 }
 
-.btn{
-    width:50px;
-    height:50px;
-    border: none;
-    border-radius:50%;
-    background-color:gray;
-    visibility: hidden;
-}
-
-.btn img{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top:0;
-    left: 248px;
-}
-
 .stranici{
-    background-color: #74717e63;
     width:100%;
     height:30%;
     text-align: center;
     margin-bottom: 1px;
     
-}
-
-.kontakti{
-    background-color: #74717e63;
-    width:100%;
-    height:100%;
-    text-align: center;
 }
 
 .right-menu{
@@ -826,4 +799,241 @@ a{
     margin-left:10px;
 }
 
+.reklama{
+    display: flex;
+}
 
+.txt-reklama{
+    width:100px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.sama-reklama{
+    margin-top:40px;
+    width:250px;
+    height:140px;
+}
+
+.sama-reklama a{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:30px;
+}
+
+.sama-reklama h3{
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+.sama-reklama img{
+    width:60px;
+    height:60px;
+    position: absolute;
+    left:35px;
+}
+
+.sama-reklama div:hover{
+    background-color:gray;
+    border-radius:10px;
+}
+
+.stranici-up{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-more{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-more:hover{
+    background-color:gray;
+}
+
+.img-more img{
+    width:20px;
+    height:20px;
+    position: absolute;
+    right:30px;
+}
+
+.stranici-middle{
+    width:190px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 10px;
+    padding-right:175px;
+    
+}
+
+.stranici-middle:hover{
+    background-color:gray;
+}
+
+.stranici-middle a{
+    display:flex;
+    color:black;
+
+}
+
+.stranici-middle img{
+    width:30px;
+    height:30px;
+    position: absolute;
+    left:5px;
+    top:252px;
+    border-radius:50%;
+}
+
+.stranici-down{
+    height:85px;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.stranici-down a{
+    display:flex;
+    color:black;
+
+}
+
+.stranici-down h4{
+    margin-bottom:0;
+    margin-left:25px;
+}
+
+.stranici-down img{
+    width:20px;
+    height:20px;
+    position: absolute;
+    margin-top:18px;
+    
+}
+
+.stranici-down div{
+    width:250px;
+    height:25px;
+    margin-left:80px;
+    margin-top:1px;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:8px;
+    padding-right:8px;
+    display:flex;
+    align-items:end;
+    border-radius: 10px;
+}
+
+.stranici-down div:hover{
+    background-color:gray;
+}
+
+.kontakti{
+    width:100%;
+    text-align: center;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakti-up{
+    width:100%;
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.kontakti-up-ikonki{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100px;
+    height:40px;
+    margin-right:10px;
+}
+
+.kontakti-up-ikonki img{
+    width:20px;
+    height:20px;
+}
+.txt-kontakti{
+    margin-left:16px;
+}
+
+.camera{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.lupa{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.more{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.camera:hover, .lupa:hover, .more:hover{
+    background-color:gray;
+    cursor: pointer;
+}
+
+.kontakti-down{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.kontakti-down div{
+    width:96%;
+    margin-left:8px;
+    display:flex;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.kontakti-down div:hover{
+    background-color: gray;
+}
+
+.kontakti-down img{
+    width:40px;
+    height:40px;
+    position: absolute;
+    margin-top:10px;
+    margin-left:10px;
+    border-radius: 50%;
+}
+
+.kontakti-down h4{
+    margin-left:60px;
+}
