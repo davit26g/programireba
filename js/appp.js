@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded',function(){
     let notifications = document.querySelector('.notifications');
     let accounticon = document.querySelector('.account');
     let account = document.querySelector('.profile-menu');
+    let like = document.querySelector('.like');
+    let likeoff = document.querySelector('.likeoff');
+    let likeon = document.querySelector('.likeon');
+
     
 
     reload.addEventListener('click',()=>{
@@ -65,6 +69,18 @@ document.addEventListener('DOMContentLoaded',function(){
             showmenu.style.visibility = '';
         }else{
             account.style.visibility = '';
+        }
+    })
+
+    like.addEventListener('click',()=>{
+        if(likeoff.style.visibility === 'visible'){
+            likeoff.style.visibility = 'hidden';
+            likeon.style.visibility = 'visible';
+            like.style.color = 'blue';
+        }else{
+            likeoff.style.visibility = 'visible';
+            likeon.style.visibility = '';
+            like.style.color = '';
         }
     })
 })

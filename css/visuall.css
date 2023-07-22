@@ -4,36 +4,20 @@ html, body{
 
 body{
     margin:0;
-
-    background: linear-gradient(45deg, #CC95C0, #DBD4B4, #7AA1D2);
-    background-size: 300% 300%;
-    animation-name: gradient;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    background-color:rgb(201, 238, 243);
 }
 
-@keyframes gradient{
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
-}
 
 a{
     text-decoration: none;
 }
 
 .header{
-    background-color:#20325a61;
+    background-color: rgb(191, 191, 218);
     box-shadow: inset 6px 7px 20px 2px #61dfd98c;
     width:100vw;
     height:10vh;
-    z-index:101;
+    z-index:105;
     position: fixed;
     display:flex;
     flex-direction: row;
@@ -173,12 +157,10 @@ a{
 }
 
 .left-block{
-    /* background-color: #2e2a3d96; */
     width:30%;
     height:53.5vh;
     position:fixed;
     top:63px;
-    /* box-shadow: inset -7px 0px 20px 0px #d3bcbc; */
 }
 
 .left-block img{
@@ -187,7 +169,6 @@ a{
 }
 
 .left-block a{
-    /* color:rgb(184, 182, 182); */
     color:black;
     display: flex;
     gap: 10px;
@@ -195,13 +176,11 @@ a{
 }
 
 .left-middle-block{
-    /* background-color: #2e2a3d96; */
     width:30%;
     height:36.5vh;
     position:fixed;
     top:63.6%;
     overflow-y: auto;
-    /* box-shadow: inset -7px 0px 20px 0px #d3bcbc; */
 }
 
 .left-middle-block a{
@@ -209,7 +188,6 @@ a{
     gap: 40px;
     margin-bottom:10px;
     font-size: 25px;
-    /* color:rgb(184, 182, 182); */
     color:black;
 }
 
@@ -235,7 +213,6 @@ a{
 }
 
 .left-down-block{
-    /* background-color: #2e2a3d96; */
     width:30%;
     height: 36%;
     display:flex;
@@ -244,11 +221,9 @@ a{
     visibility: hidden;
     flex-direction: column;
     overflow-y: auto;
-    /* box-shadow: inset -7px 0px 20px 0px #d3bcbc; */
 }
 
 .left-down-block a{
-    /* color:rgb(184, 182, 182); */
     color:black;
     display: flex;
     gap: 10px;
@@ -268,7 +243,7 @@ a{
     width: 90.5%;
 }
 
-.middle-block{
+.content{
     display: flex;
     width:40%;
     height:100%;
@@ -277,19 +252,10 @@ a{
     top: 63px;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: flex-start;
-    
-    
+    align-content: flex-start; 
 }
 
-.middle-block article{
-    border: 2px solid black;
-    width:100px;
-    height:100px;
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 
 .right-block{
     width:28%;
@@ -309,7 +275,6 @@ a{
     align-items: flex-end;
     cursor: pointer;
     padding-bottom: 12px;
-    /* color:rgb(184, 182, 182); */
     color:black;
 }
 
@@ -1036,4 +1001,113 @@ a{
 
 .kontakti-down h4{
     margin-left:60px;
+}
+
+.post{
+    width:500px;
+    height:540px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color:rgb(174, 206, 211);
+}
+
+.post-up{
+    width:500px;
+    height:55px;
+    position: relative;
+}
+
+.post-up-left{
+    position: absolute;
+    width:300px;
+    height:55px;
+    display:flex;
+    align-items: center;
+    
+}
+
+.post-up-left img{
+    width:40px;
+    height:40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+}   
+
+.post-up-right{
+    position: absolute;
+    width:200px;
+    height:55px;
+    top:0;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.post-up-right img{
+    width:35px;
+    height:35px;
+    margin-right:10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-up-right img:hover{
+    background-color: rgb(182, 179, 179);
+}
+
+.post-content{
+    width:500px;
+    height:420px;
+    position: absolute;
+}
+
+.post-content img{
+    width:500px;
+    height: 334px;
+}
+
+.post-content p{
+    margin-left:10px;
+}
+
+.post-down{
+    width:500px;
+    height:65px;
+    position: absolute;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-items:end;
+}
+
+.post-down span{
+    height:40px;
+    display: flex;
+    margin-right:2px;
+    align-items: center;
+    padding:0 10px 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.post-down img{
+    width:20px;
+    height:20px;
+    margin-right: 10px;
+}
+
+.post-down span:hover{
+    background-color: rgb(194, 192, 192);
+}
+
+.likeoff{
+    visibility: visible;
+}
+
+.likeon{
+    position: absolute;
+    visibility: hidden;
 }
