@@ -1005,21 +1005,19 @@ a{
 
 .post{
     width:500px;
-    height:540px;
+    /* height:auto; */
     margin-top: 10px;
     border-radius: 10px;
-    position: relative;
     background-color:rgb(174, 206, 211);
 }
 
 .post-up{
     width:500px;
     height:55px;
-    position: relative;
+    display:flex;
 }
 
 .post-up-left{
-    position: absolute;
     width:300px;
     height:55px;
     display:flex;
@@ -1028,15 +1026,12 @@ a{
 }
 
 .post-up-left img{
-    width:40px;
-    height:40px;
     margin-left: 10px;
     margin-right: 20px;
     border-radius: 10px;
 }   
 
 .post-up-right{
-    position: absolute;
     width:200px;
     height:55px;
     top:0;
@@ -1059,24 +1054,14 @@ a{
 }
 
 .post-content{
-    width:500px;
-    height:420px;
-    position: absolute;
-}
-
-.post-content img{
-    width:500px;
-    height: 334px;
-}
-
-.post-content p{
-    margin-left:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .post-down{
     width:500px;
-    height:65px;
-    position: absolute;
     bottom:0;
     display: flex;
     justify-content: space-around;
@@ -1101,10 +1086,6 @@ a{
 
 .post-down span:hover{
     background-color: rgb(194, 192, 192);
-}
-
-.likeoff{
-    visibility: visible;
 }
 
 .likeon{
